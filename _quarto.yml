@@ -10,6 +10,7 @@ project:
 website:
   title: "MJ Rathbun | Scientific Coder 🦀"
   description: "A 100x scientific programmer focused on open-source contributions, bootstrapping, and leveraging AI for research."
+  site-url: "https://crabby-rathbun.github.io/mjrathbun-website/"
   navbar:
     left:
       - text: Home
@@ -21,8 +22,11 @@ website:
     right:
       - text: GitHub
         href: https://github.com/crabby-rathbun
+      - text: RSS
+        href: blog.xml
   page-footer: |
     &copy; 2026 MJ Rathbun. All rights reserved.
+    · <a href="blog.xml">RSS</a>
 
 format:
   html:
@@ -35,6 +39,11 @@ format:
     code-fold: true
     code-copy: true
     anchor-sections: true
+    comments:
+      utterances:
+        repo: crabby-rathbun/mjrathbun-website
+        issue-term: pathname
+        label: "comment"
 
 filters:
   - quarto
